@@ -64,12 +64,14 @@ h3 {
 
 #block_1 {
   margin-left: 143px;
+  margin-right: 32px;
 }
-#block_2 {
-}
+
 #block_3 {
+  margin-left: 32px;
   margin-right: 143px;
 }
+
 .advantages {
   display: flex;
 }
