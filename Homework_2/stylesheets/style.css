@@ -36,7 +36,7 @@ p {
   line-height: 20px;
 }
 
-.sphere {
+.advantages_sphere {
   width: 70px;
   height: 70px;
   border: 2px solid #ffa254;
@@ -61,12 +61,12 @@ h3 {
   padding-bottom: 25px;
 }
 
-#item_1 {
+#advantage_1 {
   margin-left: 143px;
   margin-right: 32px;
 }
 
-#item_3 {
+#advantage_3 {
   margin-left: 32px;
   margin-right: 143px;
 }
@@ -75,15 +75,15 @@ h3 {
   display: flex;
 }
 
-figure.bulb {
+figure.advantages_bulb-pic {
   margin-top: 21px;
   text-align: center;
 }
-figure.keyboard {
+figure.advantages_keyboard-pic {
   margin-top: 24px;
   text-align: center;
 }
-figure.lightning {
+figure.advantages_lightning-pic {
   margin-top: 19px;
   text-align: center;
 }
