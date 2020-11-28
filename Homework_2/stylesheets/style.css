@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+
 .awesome {
   width: 100%;
 }
