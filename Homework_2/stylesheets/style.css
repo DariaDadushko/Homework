@@ -5,7 +5,7 @@
 }
 .conteiner {
   max-width: 1400px;
-  background-color: rgb(181, 211, 201);
+  background-color: #ffffff;
 }
 h2 {
   font-family: "Raleway", sans-serif;
@@ -13,9 +13,8 @@ h2 {
   font-size: 36px;
   font-weight: 400;
   padding-top: 108px;
-  /* margin-right: 497px; */
   margin-bottom: 30px;
-  /* margin-left: 498px; */
+  color: #212121;
 }
 
 .line {
@@ -47,7 +46,7 @@ p {
   margin-left: 140px;
 }
 
-.advantages-block {
+.advantages__item {
   width: 350px;
   margin-bottom: 105px;
   margin-top: 80px;
@@ -62,12 +61,12 @@ h3 {
   padding-bottom: 25px;
 }
 
-#block_1 {
+#item_1 {
   margin-left: 143px;
   margin-right: 32px;
 }
 
-#block_3 {
+#item_3 {
   margin-left: 32px;
   margin-right: 143px;
 }
