@@ -5,28 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>This is awesome</title>
     <link rel="stylesheet" href="stylesheets/reset.css" />
-    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/normalize.css" />
   </head>
+  <link rel="stylesheet" href="stylesheets/style.css" />
+
   <body>
     <section class="awesome">
       <div class="conteiner">
-        <h2>WHY THIS IS AWESOME</h2>
-        <div class="line"></div>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <h2 class="awesome__title">WHY THIS IS AWESOME</h2>
+        <div class="awesome__line"></div>
+        <p class="awesome__text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </p>
 
-        <section class="advantages">
-          <div class="advantages__item" id="advantage_1">
-            <div class="advantages__picture">
-              <div class="advantages_sphere">
-                <figure class="advantages_bulb-pic">
-                  <img src="pictures/light_bulb.png" alt="orange light bulb" />
-                </figure>
-              </div>
+        <div class="awesome__cards">
+          <div class="awesome-card__item advantage_1">
+            <div class="awesome-card_img">
+              <img src="pictures/light_bulb.png" alt="orange light bulb" />
             </div>
-            <div class="advantages__title">
+            <div class="awesome-card__title">
               <h3>Thoughtful Design</h3>
             </div>
-            <div class="advantages__text">
+            <div class="awesome-card__text">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
                 dolores, architecto nesciunt hic suscipit harum, ipsa at et
@@ -35,18 +35,14 @@
             </div>
           </div>
 
-          <div class="advantages__item" id="advantage_2">
-            <div class="advantages__picture">
-              <div class="advantages_sphere">
-                <figure class="advantages_keyboard-pic">
-                  <img src="pictures/keyboard.png" alt="orange keyboard" />
-                </figure>
-              </div>
+          <div class="awesome-card__item advantage_2">
+            <div class="awesome-card_img">
+              <img src="pictures/keyboard.png" alt="orange keyboard" />
             </div>
-            <div class="advantages__title">
+            <div class="awesome-card__title">
               <h3>Well Crafted</h3>
             </div>
-            <div class="advantages__text">
+            <div class="awesome-card__text">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
                 dolores, architecto nesciunt hic suscipit harum, ipsa at et
@@ -55,18 +51,14 @@
             </div>
           </div>
 
-          <div class="advantages__item" id="advantage_3">
-            <div class="advantages__picture">
-              <div class="advantages_sphere">
-                <figure class="advantages_lightning-pic">
-                  <img src="pictures/lightning.png" alt="orange lightning" />
-                </figure>
-              </div>
+          <div class="awesome-card__item" advantage_3">
+            <div class="awesome-card_img">
+              <img src="pictures/lightning.png" alt="orange lightning" />
             </div>
-            <div class="advantages__title">
+            <div class="awesome-card__title">
               <h3>Easy to Customize</h3>
             </div>
-            <div class="advantages__text">
+            <div class="awesome-card__text">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
                 dolores, architecto nesciunt hic suscipit harum, ipsa at et
@@ -74,7 +66,7 @@
               </p>
             </div>
           </div>
-        </section>
+        </div>
       </div>
     </section>
   </body>
