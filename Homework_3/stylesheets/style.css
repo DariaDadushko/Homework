@@ -19,11 +19,14 @@
   color: #212121;
 }
 
-.awesome__line {
-  height: 2px;
+.awesome__title::after{
+  content:"";
+  display:block;
   width: 64px;
-  background-color: #ff8b38;
-  margin: 30px auto 30px;
+  height: 2px;
+  background-color:#ffa254;
+  margin:30px auto 30px;
+
 }
 
 .awesome__text,
