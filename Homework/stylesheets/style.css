@@ -95,14 +95,18 @@ p {
 .nav_item {
   opacity: 0.69;
   color: #ffffff;
-  font-family: "Open Sans - Semibold";
+  font-family: "Open Sans";
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
   letter-spacing: normal;
 }
 .nav_item:hover {
   color: #ffa254;
+}
+
+.nav_item:active {
+  list-style-type: none;
 }
 .navigation_panel {
   display: flex;
@@ -119,22 +123,27 @@ p {
 }
 /* full screen */
 .conteiner-full {
+  width: 100%;
+  max-width: 1170px;
   flex: 1 1 auto;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .axit-fullscreen {
   width: 100%;
   min-height: calc(100vh - 71px);
-  background: url(../images/image.png);
-  background-color: rgb(85, 79, 79);
+  background: url(../images/image.png) rgba(5, 5, 5, 1);
   background-position: center;
   background-size: cover;
   padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .axit-fullscreen_main {
   width: 512px;
-  padding: 30px;
+  /* padding: 30px; */
 }
 
 .axit-fullscreen_logo {
@@ -199,12 +208,40 @@ p {
   text-transform: uppercase;
 }
 .registration-form {
-  background-color: #ffffff;
   width: 360px;
   margin: 30px;
+  background-color: #ffffff;
   border-radius: 5px;
+  /* border-radius: ; */
+}
+.registration-form_group {
+  width: 360px;
+  padding: 29px 45px 49px 45px;
+}
+input {
+  height: 31px;
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+}
+input::-ms-input-placeholder,
+input::-webkit-input-placeholder {
+  color: #bdbdbd;
+  font-family: "OpenSans";
+  font-size: 14px;
+  text-align: left;
+}
+.registration-form_name {
+  margin-bottom: 36px;
+  width: 280px;
 }
 
+.registration-form_email {
+  margin-bottom: 47px;
+  width: 280px;
+}
+.registration-form_password {
+  width: 280px;
+}
 .registration-form-button {
   display: block;
   width: 360px;
@@ -213,7 +250,7 @@ p {
   border: none;
   background: #ff8b38;
   color: #ffffff;
-  font-family: "Open Sans - Semibold";
+  font-family: "Open Sans";
   font-size: 15px;
   font-weight: 400;
   font-style: normal;
@@ -221,25 +258,13 @@ p {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-  height: 31px;
-  width: auto;
-  display: block;
-  border: none;
-  border-bottom: 2px solid #f5f5f5;
-  margin: 29px auto 36px;
-  align-items: center;
-}
-input[type="password"] {
-  margin-bottom: 49px;
+.registration-form-button:hover {
+  background: #86878b;
 }
 
 /* social media */
 .social-media {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.38);
+  border-bottom: solid 2px #f5f5f5;
 }
 .social-media_conteiner {
   display: flex;
@@ -248,7 +273,6 @@ input[type="password"] {
   justify-content: space-between;
   align-items: center;
   padding: 10px 15px;
-  margin-bottom: 5px;
 }
 .social-media__text {
   width: 360px;
@@ -355,7 +379,7 @@ input[type="password"] {
 }
 .price-description {
   color: rgba(255, 255, 255, 0.5);
-  font-family: "Open Sans - Semibold";
+  font-family: "Open Sans";
   font-size: 14px;
   font-weight: 400;
   font-style: italic;
@@ -398,7 +422,7 @@ input[type="password"] {
 /* feedback */
 
 .feedback-cards {
-  margin-bottom: 101px;
+  margin-bottom: 90px;
   margin-top: 55px;
   display: flex;
   flex-direction: row;
@@ -409,7 +433,7 @@ input[type="password"] {
 }
 .feedback-card_item {
   width: 273px;
-  margin: 0 60px;
+  margin: 0 60px 10px 60px;
 }
 .comment {
   position: relative;
@@ -477,7 +501,7 @@ input[type="password"] {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(5, 5, 5, 0.5);
+  background-color: rgba(5, 5, 5, 0.7);
   z-index: 0;
 }
 .awesome-footer {
@@ -513,7 +537,7 @@ input[type="password"] {
   display: block;
   background: transparent;
   color: #ffffff;
-  font-family: "Open Sans - Semibold";
+  font-family: "Open Sans";
   font-size: 15px;
   font-weight: 400;
   padding: 15px 33px 14px 31px;
@@ -535,52 +559,74 @@ input[type="password"] {
 .contact__description {
   margin-bottom: 80px;
 }
-.contact__button {
+.contact-form_button {
   width: 148px;
   outline: none;
   border: none;
   display: block;
   background: #ff8b38;
   color: #ffffff;
-  font-family: "Open Sans - Semibold";
+  font-family: "Open Sans";
   font-size: 15px;
   font-weight: 400;
   font-style: normal;
   text-transform: capitalize;
   border-radius: 5px;
   padding: 15px 22px 15px 24px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 95px;
+  margin: 80px auto 50px;
 }
-.contact__button:hover {
+
+.contact-form_button:hover {
   background: #cccccc;
 }
 /* contact form */
-input[type="textarea"] {
-  width: 527px;
-  display: block;
-  border: none;
-  border-bottom: 2px solid #f5f5f5;
-}
-
-.contact-forms {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.form-group,
-.form-message {
-  width: 527px;
-}
-/* footer */
-.awesome-footer {
-  background-color: #000000;
-  max-width: 100%;
+.contact-form {
+  max-width: 1117px;
   margin: 0 auto;
 }
 
+.contact-form_items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -10px auto;
+}
+.contact-form_group {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.contact-form_name,
+.contact-form_email,
+.contact-form_subject,
+.contact-form_message {
+  width: 527px;
+  margin-bottom: 30px;
+}
+.contact-message {
+  height: 153px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.contact-form_name,
+.contact-form_email,
+.contact-form_subject {
+  height: 31px;
+}
+.contact-form_message {
+  height: 153px;
+}
+
+/* footer */
+.awesome-footer {
+  background: #000000;
+}
+
+.footer-conteiner {
+  background-color: #000000;
+  margin: 0 auto;
+}
 .footer_copiright_text {
   margin-top: 15px;
   margin-left: auto;
@@ -600,8 +646,6 @@ input[type="textarea"] {
   flex-direction: row;
   width: 317px;
   justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 15px;
   padding-top: 38px;
 }

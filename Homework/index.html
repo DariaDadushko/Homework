@@ -43,9 +43,11 @@
       <div class="axit-fullscreen_registration">
         <form action="#" method="GET" class="registration-form">
           <h3 class="registration_title">Try your <span class="free">free</span>  trial today</h3>
-          <input type="text" placeholder="Name" id="name" name="user name">
-          <input type="email" placeholder="Email" id="email" name=" user email">
-          <input type="password" placeholder="Password" id="password" name=" user password">
+          <div class="registration-form_group">
+          <input type="text" placeholder="Name" id="name" name="user name" class="registration-form_name">
+          <input type="email" placeholder="Email" id="email" name=" user email" class="registration-form_email">
+          <input type="password" placeholder="Password" id="password" name=" user password" class="registration-form_password">
+        </div>
           <button type="button" class="registration-form-button">Get started</button>
         </form>
       </div>
@@ -271,22 +273,22 @@
         </h2>
         <p class="contact__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
        <form action="#" method="GET" class="contact-form">
-        <div class="contact-forms">
-           <div class="form-group">
-            <input type="text" placeholder="Name" id="userName" name="user name">
-           <input type="email" placeholder="Email" id="userEmail" name="user email">
-           <input type="text" placeholder="Subject" id="userSubject" name=" user subject">
+         <div class="contact-form_items">
+        <ul class="contact-form_group">
+           <li class="_item"> <input type="text" placeholder="Name" id="userName" name="user name" class="contact-form_name"></li>
+           <li class="contact-form_item"><input type="email" placeholder="Email" id="userEmail" name="user email" class="contact-form_email"></li>
+           <li class="contact-form_item"> <input type="text" placeholder="Subject" id="userSubject" name=" user subject" class="contact-form_subject"></li>
+        </ul>
+        <div class="contact-message">
+            <input type="textarea" placeholder="Message" id="userMessage" name="user message" class="contact-form_message"> 
         </div>
-        <div class="form-message">
-            <input type="textarea" placeholder="Message" id="userMessage" name="user message" rows="10" cols="45">
-        </div>
-      </div>
-         <button class="contact__button">Send message</button>
+     </div>
+         <button class="contact-form_button">Send message</button>
         </form>
       </div>
   </section>
   <footer class="awesome-footer">
-      <div class="conteiner">
+      <div class="conteiner footer-conteiner">
         <nav class="footer_nav">
       <ul class="footer_panel__media">
         <li class=social_media>
