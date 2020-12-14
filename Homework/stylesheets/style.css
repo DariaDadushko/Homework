@@ -74,6 +74,9 @@ p {
   letter-spacing: normal;
   line-height: normal;
 }
+a {
+  text-decoration: none;
+}
 /* header */
 .axit-header {
   max-width: 100%;
@@ -109,6 +112,7 @@ p {
   list-style-type: none;
 }
 .navigation_panel {
+  list-style: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -181,7 +185,7 @@ p {
   display: block;
   background: transparent;
   color: #ffffff;
-  font-family: "Open Sans - Semibold";
+  font-family: "Open Sans";
   font-size: 15px;
   font-weight: 400;
   padding: 15px 33px 14px 31px;
@@ -209,7 +213,7 @@ p {
 }
 .registration-form {
   width: 360px;
-  margin: 30px;
+  margin: 0 0 0 30px;
   background-color: #ffffff;
   border-radius: 5px;
   /* border-radius: ; */
@@ -504,10 +508,6 @@ input::-webkit-input-placeholder {
   background-color: rgba(5, 5, 5, 0.7);
   z-index: 0;
 }
-.awesome-footer {
-  margin: 0 auto;
-  background-color: #000000;
-}
 
 .axure-design__title {
   color: #ffffff;
@@ -614,18 +614,20 @@ input::-webkit-input-placeholder {
 .contact-form_subject {
   height: 31px;
 }
-.contact-form_message {
-  height: 153px;
-}
 
+textarea {
+  height: 153px;
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+}
 /* footer */
 .awesome-footer {
   background: #000000;
+  max-width: 100%;
 }
 
 .footer-conteiner {
   background-color: #000000;
-  margin: 0 auto;
 }
 .footer_copiright_text {
   margin-top: 15px;
@@ -639,8 +641,11 @@ input::-webkit-input-placeholder {
   color: #ffffff;
   text-align: center;
 }
-
+.footer_nav {
+  max-width: 1170px;
+}
 .footer_panel__media {
+  margin: 0 auto;
   display: flex;
   list-style: none;
   flex-direction: row;
@@ -648,6 +653,7 @@ input::-webkit-input-placeholder {
   justify-content: space-between;
   margin-bottom: 15px;
   padding-top: 38px;
+  text-align: center;
 }
 i {
   font-family: "Font Awesome 5 Free";
