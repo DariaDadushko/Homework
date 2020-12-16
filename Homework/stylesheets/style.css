@@ -151,8 +151,6 @@ a {
 }
 .axit-fullscreen_main {
   width: 512px;
-  position: relative;
-  /* padding: 30px; */
 }
 
 .axit-fullscreen_logo {
@@ -166,14 +164,12 @@ a {
   margin-bottom: 36px;
 }
 
-/* .axit-main-title::after {
+.axit-main-title::after {
   content: "";
   display: block;
   background-color: #ffffff;
-  position: absolute;
-  top: 206px;
-  left: 2px;
-} */
+  margin: 30px auto 30px 0;
+}
 .axit-main-text {
   text-align: left;
   margin-bottom: 36px;
