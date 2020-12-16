@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
 }
+
+html {
+  font-size: 16px;
+}
 .awesome
   .pricing
   .feedback
@@ -23,7 +27,7 @@
 h1 {
   color: #ffffff;
   font-family: Raleway;
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
@@ -35,7 +39,7 @@ h1 {
 h2 {
   font-family: "Raleway", sans-serif;
   text-align: center;
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 400;
   padding-top: 108px;
   color: #212121;
@@ -44,7 +48,7 @@ h2 {
 
 h3 {
   font-family: "Open Sans";
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
   text-align: center;
   color: #333333;
@@ -68,7 +72,7 @@ h3 {
 p {
   color: #86878b;
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 0.87rem;
   font-weight: 400;
   text-align: center;
   letter-spacing: normal;
@@ -99,7 +103,7 @@ a {
   opacity: 0.69;
   color: #ffffff;
   font-family: "Open Sans";
-  font-size: 14px;
+  font-size: 0.87rem;
   font-weight: 700;
   font-style: normal;
   letter-spacing: normal;
@@ -147,6 +151,7 @@ a {
 }
 .axit-fullscreen_main {
   width: 512px;
+  position: relative;
   /* padding: 30px; */
 }
 
@@ -161,17 +166,23 @@ a {
   margin-bottom: 36px;
 }
 
-.axit-main-title::after {
+/* .axit-main-title::after {
   content: "";
-  position: absolute;
+  display: block;
   background-color: #ffffff;
+  position: absolute;
+  top: 206px;
+  left: 2px;
+} */
+.axit-main-text {
   text-align: left;
+  margin-bottom: 36px;
 }
 .axit-main-description {
   opacity: 0.8;
   color: #ffffff;
   font-family: Raleway;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
   font-style: normal;
   letter-spacing: normal;
@@ -186,7 +197,7 @@ a {
   background: transparent;
   color: #ffffff;
   font-family: "Open Sans";
-  font-size: 15px;
+  font-size: 0.937rem;
   font-weight: 400;
   padding: 15px 33px 14px 31px;
   border: 2px solid #ffffff;
@@ -231,7 +242,7 @@ input::-ms-input-placeholder,
 input::-webkit-input-placeholder {
   color: #bdbdbd;
   font-family: "OpenSans";
-  font-size: 14px;
+  font-size: 0.87rem;
   text-align: left;
 }
 .registration-form_name {
@@ -255,7 +266,7 @@ input::-webkit-input-placeholder {
   background: #ff8b38;
   color: #ffffff;
   font-family: "Open Sans";
-  font-size: 15px;
+  font-size: 0.937rem;
   font-weight: 400;
   font-style: normal;
   text-transform: capitalize;
@@ -356,7 +367,7 @@ input::-webkit-input-placeholder {
 .price-title {
   color: #ffffff;
   font-family: "Open Sans";
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
   text-align: center;
   line-height: 59px;
@@ -369,13 +380,13 @@ input::-webkit-input-placeholder {
 .pricing__card_price {
   color: #ffffff;
   font-family: "Raleway";
-  font-size: 94px;
+  font-size: 5.87rem;
   font-weight: 700;
   line-height: 100px;
 }
 
 .dollar {
-  font-size: 35px;
+  font-size: 2.187rem;
   vertical-align: bottom;
   font-style: normal;
   letter-spacing: normal;
@@ -384,7 +395,7 @@ input::-webkit-input-placeholder {
 .price-description {
   color: rgba(255, 255, 255, 0.5);
   font-family: "Open Sans";
-  font-size: 14px;
+  font-size: 0.87rem;
   font-weight: 400;
   font-style: italic;
   text-align: center;
@@ -397,7 +408,7 @@ input::-webkit-input-placeholder {
   background-color: #ffffff;
   color: #86878b;
   font-family: "Open Sans";
-  font-size: 14px;
+  font-size: 0.87rem;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
@@ -417,7 +428,7 @@ input::-webkit-input-placeholder {
   background-color: #ff8b38;
   color: #ffffff;
   font-family: "Open Sans";
-  font-size: 14px;
+  font-size: 0.87rem;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -538,7 +549,7 @@ input::-webkit-input-placeholder {
   background: transparent;
   color: #ffffff;
   font-family: "Open Sans";
-  font-size: 15px;
+  font-size: 0.937rem;
   font-weight: 400;
   padding: 15px 33px 14px 31px;
   border: 2px solid #ffffff;
@@ -567,7 +578,7 @@ input::-webkit-input-placeholder {
   background: #ff8b38;
   color: #ffffff;
   font-family: "Open Sans";
-  font-size: 15px;
+  font-size: 0.937rem;
   font-weight: 400;
   font-style: normal;
   text-transform: capitalize;
@@ -600,11 +611,11 @@ input::-webkit-input-placeholder {
 .contact-form_email,
 .contact-form_subject,
 .contact-form_message {
-  width: 527px;
+  width: 450px;
   margin-bottom: 30px;
 }
 .contact-message {
-  height: 153px;
+  height: 300px;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -636,7 +647,7 @@ textarea {
   padding-bottom: 15px;
   opacity: 0.5;
   font-family: "Open Sans";
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
   color: #ffffff;
   text-align: center;
@@ -658,9 +669,338 @@ textarea {
 i {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #cccccc;
 }
 i:hover {
   color: #ff8b38;
+}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+  .conteiner {
+    max-width: 1170px;
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .conteiner {
+    max-width: 1170px;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .conteiner {
+    max-width: 100%;
+  }
+  html {
+    font-size: 15px;
+  }
+
+  .conteiner-full {
+    display: block;
+  }
+  .awesome__title::after,
+  .pricing__title::after,
+  .axure-design__title::after,
+  .feedback__title::after,
+  .contact__title::after,
+  .axit-main-title::after {
+    margin: 25px auto 25px;
+  }
+
+  axit-main-title,
+  .axit-main-text {
+    text-align: center;
+  }
+
+  .axit-main-button {
+    margin: 44px auto 44px;
+  }
+
+  .axit-main-text {
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+  .feedback-card_item {
+    margin-bottom: 100px;
+  }
+
+  .social-media__text {
+    margin: 0 auto;
+  }
+
+  .social-media__title,
+  .social-media__description {
+    text-align: center;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .conteiner {
+    max-width: 100%;
+  }
+  html {
+    font-size: 14px;
+  }
+
+  .conteiner-full {
+    display: block;
+  }
+  .awesome__title::after,
+  .pricing__title::after,
+  .axure-design__title::after,
+  .feedback__title::after,
+  .contact__title::after,
+  .axit-main-title::after {
+    margin: 20px auto 20px;
+  }
+  .contact-form_name,
+  .contact-form_email,
+  .contact-form_subject,
+  .contact-form_message {
+    width: 350px;
+    margin-bottom: 30px;
+  }
+
+  .axit-main-title,
+  .axit-main-text {
+    text-align: center;
+  }
+
+  .axit-main-button {
+    margin: 44px auto 44px;
+  }
+
+  .axit-main-text {
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+  .feedback-card_item {
+    margin-bottom: 90px;
+  }
+
+  .social-media_panel {
+    width: 540px;
+  }
+
+  .social-media__title,
+  .social-media__description {
+    text-align: center;
+  }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .conteiner {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  html {
+    font-size: 19px;
+  }
+  .navigation_panel {
+    width: 400px;
+  }
+  .axit_logo {
+    margin: 15px 0;
+  }
+
+  .conteiner-full {
+    display: block;
+  }
+  .axit-fullscreen_main {
+    max-width: 512px;
+    width: 100%;
+  }
+  .social-media__text .axit-fullscreen_logo,
+  .axit-fullscreen_main,
+  .registration-form,
+  .social-media_nav {
+    margin: 0 auto;
+  }
+  .axit-main-button {
+    margin: 44px auto 44px;
+  }
+  .axit-main-title,
+  .axit-main-text {
+    text-align: center;
+  }
+  .axit-main-title {
+    font-size: 1rem;
+  }
+  .axit-main-text {
+    color: #ffffff;
+  }
+  .axit-main-title::after {
+    display: none;
+  }
+
+  .axit-main-description {
+    margin-top: 44px;
+  }
+
+  .axit-fullscreen_registration {
+    margin: 0 auto;
+    margin-top: 44px;
+  }
+  .social-media_panel {
+    max-width: 320px;
+  }
+
+  .social-media__text {
+    margin: 12px auto 12px;
+  }
+
+  .social-media__title,
+  .social-media__description {
+    text-align: center;
+  }
+  .awesome__cards {
+    display: block;
+  }
+
+  .awesome-card__item {
+    margin: 50px auto 80px;
+  }
+  .pricing__content {
+    display: block;
+  }
+  .basic,
+  .Professional,
+  .Enterprise {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .feedback-cards {
+    display: block;
+  }
+  .feedback-card_item {
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 90px;
+  }
+  .comment {
+    width: 300px;
+  }
+
+  .comment_text {
+    font-size: 1.25rem;
+  }
+
+  .comment_text::after {
+    top: 242px;
+  }
+  .contact-form_button {
+    margin: 30px auto 30px;
+  }
+  .contact-message {
+    height: 200px;
+  }
+  .axure-design_conteiner {
+    padding-bottom: 30px;
+  }
+  .awesome__title::after,
+  .pricing__title::after,
+  .axure-design__title::after,
+  .feedback__title::after,
+  .contact__title::after,
+  .axit-main-title::after {
+    margin: 15px auto 15px;
+  }
+
+  .registration-form_group {
+    width: 300px;
+    padding: 29px 25px 49px 25px;
+  }
+  .registration-form,
+  .registration-form-button {
+    max-width: 300px;
+  }
+  .registration-form_name,
+  .registration-form_email,
+  .registration-form_password {
+    width: 250px;
+  }
+  .contact-form_name,
+  .contact-form_email,
+  .contact-form_subject,
+  .contact-form_message {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  .social-media {
+    font-size: 1rem;
+  }
+
+  .price-title,
+  .price,
+  .price-description,
+  .price-benefit,
+  .price-popular {
+    width: 300px;
+  }
+
+  .axit-header {
+    display: none;
+  }
+}
+
+@media (max-width: 524.98px) {
+  .navigation_panel {
+    display: none;
+  }
+}
+@media (max-width: 699.98px) and (min-width: 599.98px) {
+  .contact-form_name,
+  .contact-form_email,
+  .contact-form_subject,
+  .contact-form_message {
+    width: 250px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 799.98px) and (min-width: 699.98px) {
+  .contact-form_name,
+  .contact-form_email,
+  .contact-form_subject,
+  .contact-form_message {
+    width: 300px;
+  }
+}
+@media (max-width: 899.98px) and (min-width: 799.98px) {
+  .contact-form_name,
+  .contact-form_email,
+  .contact-form_subject,
+  .contact-form_message {
+    width: 350px;
+  }
+}
+@media (max-width: 999.98px) and (min-width: 899.98px) {
+  .contact-form_name,
+  .contact-form_email,
+  .contact-form_subject,
+  .contact-form_message {
+    width: 400px;
+  }
+}
+
+@media (max-width: 946.98px) {
+  .conteiner-full {
+    display: block;
+  }
+  .axit-fullscreen_logo,
+  .axit-fullscreen_main,
+  .registration-form,
+  .social-media_nav {
+    margin: 0 auto;
+  }
 }
