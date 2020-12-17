@@ -4,6 +4,7 @@
 
 html {
   font-size: 16px;
+  overflow-x: hidden;
 }
 .awesome
   .pricing
@@ -22,6 +23,7 @@ html {
   max-width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -771,13 +773,6 @@ i:hover {
   .axit-main-title::after {
     margin: 20px auto 20px;
   }
-  .contact-form_name,
-  .contact-form_email,
-  .contact-form_subject,
-  .contact-form_message {
-    width: 350px;
-    margin-bottom: 30px;
-  }
 
   .axit-main-title,
   .axit-main-text {
@@ -811,6 +806,20 @@ i:hover {
     content: "";
     position: absolute;
     top: 118px;
+  }
+
+  .contact-form_name,
+  .contact-form_email,
+  .contact-form_subject,
+  .contact-form_message {
+    width: 100%;
+    min-width: 550px;
+    margin-bottom: 20px;
+  }
+  .contact-form_items,
+  .contact-form_group {
+    width: 100%;
+    min-width: 550px;
   }
 }
 
@@ -870,18 +879,15 @@ i:hover {
     margin-top: 44px;
   }
   .social-media_panel {
-    display: block;
     min-width: 300px;
-    width: 300px;
+    width: 100%;
   }
   .social-media_nav {
     min-width: 300px;
+    width: 100%;
   }
   .social-media__text {
     margin: 12px auto 12px;
-  }
-  .social_media {
-    display: inline;
   }
 
   .social-media__title,
@@ -897,6 +903,10 @@ i:hover {
   }
   .pricing__content {
     display: block;
+  }
+
+  .pricing_card {
+    margin: 0 auto;
   }
   .basic,
   .Professional,
@@ -951,6 +961,11 @@ i:hover {
   .registration-form-button {
     max-width: 300px;
   }
+
+  .contact-form_button {
+    width: 100%;
+    min-width: 300px;
+  }
   .registration-form_name,
   .registration-form_email,
   .registration-form_password {
@@ -960,8 +975,17 @@ i:hover {
   .contact-form_email,
   .contact-form_subject,
   .contact-form_message {
-    width: 300px;
+    min-width: 300px;
+    width: 100%;
     margin-bottom: 20px;
+  }
+
+  .contact-message,
+  .contact-form,
+  .contact-form_items,
+  .contact-form_group {
+    width: 100%;
+    min-width: 300px;
   }
   .social-media {
     font-size: 1rem;
@@ -995,7 +1019,7 @@ i:hover {
   }
 }
 
-@media (max-width: 799.98px) and (min-width: 699.98px) {
+@media (max-width: 799.98px) and (min-width: 767.98px) {
   .contact-form_name,
   .contact-form_email,
   .contact-form_subject,
