@@ -293,7 +293,7 @@ input::-webkit-input-placeholder {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 634px;
+  min-width: 500px;
   justify-content: space-between;
 }
 .social-media__title {
@@ -706,12 +706,22 @@ i:hover {
   .axit-main-title::after {
     margin: 25px auto 25px;
   }
-
-  axit-main-title,
+  .axit-fullscreen_main {
+    margin: 15px auto 15px;
+  }
+  .axit-main-title,
   .axit-main-text {
     text-align: center;
   }
 
+  .social-media__title,
+  .social-media__description {
+    text-align: center;
+  }
+  .registration-form,
+  .axit-fullscreen_logo {
+    margin: auto;
+  }
   .axit-main-button {
     margin: 44px auto 44px;
   }
@@ -724,7 +734,7 @@ i:hover {
   .feedback-card_item {
     margin-bottom: 100px;
   }
-
+  .social-media_nav,
   .social-media__text {
     margin: 0 auto;
   }
@@ -732,6 +742,12 @@ i:hover {
   .social-media__title,
   .social-media__description {
     text-align: center;
+  }
+
+  .comment_text::after {
+    content: "";
+    position: absolute;
+    top: 123px;
   }
 }
 
@@ -783,11 +799,18 @@ i:hover {
 
   .social-media_panel {
     width: 540px;
+    margin: 0 auto;
   }
 
   .social-media__title,
   .social-media__description {
     text-align: center;
+  }
+
+  .comment_text::after {
+    content: "";
+    position: absolute;
+    top: 118px;
   }
 }
 
@@ -802,9 +825,7 @@ i:hover {
   html {
     font-size: 19px;
   }
-  .navigation_panel {
-    width: 400px;
-  }
+
   .axit_logo {
     margin: 15px 0;
   }
@@ -816,7 +837,8 @@ i:hover {
     max-width: 512px;
     width: 100%;
   }
-  .social-media__text .axit-fullscreen_logo,
+  .social-media__text,
+  .axit-fullscreen_logo,
   .axit-fullscreen_main,
   .registration-form,
   .social-media_nav {
@@ -848,11 +870,18 @@ i:hover {
     margin-top: 44px;
   }
   .social-media_panel {
-    max-width: 320px;
+    display: block;
+    min-width: 300px;
+    width: 300px;
   }
-
+  .social-media_nav {
+    min-width: 300px;
+  }
   .social-media__text {
     margin: 12px auto 12px;
+  }
+  .social_media {
+    display: inline;
   }
 
   .social-media__title,
@@ -892,7 +921,9 @@ i:hover {
   }
 
   .comment_text::after {
-    top: 242px;
+    content: "";
+    position: absolute;
+    top: 278px;
   }
   .contact-form_button {
     margin: 30px auto 30px;
@@ -989,14 +1020,8 @@ i:hover {
   }
 }
 
-@media (max-width: 946.98px) {
-  .conteiner-full {
-    display: block;
-  }
-  .axit-fullscreen_logo,
-  .axit-fullscreen_main,
-  .registration-form,
+@media (max-width: 1023.98px) {
   .social-media_nav {
-    margin: 0 auto;
+    width: 550px;
   }
 }
